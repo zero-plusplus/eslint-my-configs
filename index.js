@@ -1,5 +1,9 @@
 'use strict';
 
-const javascript_rule = require('./src/javascript.js');
+const javascript = require('./src/javascript.js');
+const typescript = require('./src/typescript.js');
 
-module.exports = { javascript: javascript_rule };
+module.exports = {
+  javascript,
+  typescript, 
+};

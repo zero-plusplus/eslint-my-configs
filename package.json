@@ -1,0 +1,19 @@
+{
+  "name": "eslint-my-configs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zero-plusplus/eslint-my-configs.git"
+  },
+  "author": "zero-plusplus",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zero-plusplus/eslint-my-configs/issues"
+  },
+  "homepage": "https://github.com/zero-plusplus/eslint-my-configs#readme"
+}

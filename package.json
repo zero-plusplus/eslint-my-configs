@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/zero-plusplus/eslint-my-configs/issues"
   },
-  "homepage": "https://github.com/zero-plusplus/eslint-my-configs#readme"
+  "homepage": "https://github.com/zero-plusplus/eslint-my-configs#readme",
+  "devDependencies": {
+    "eslint": "^6.8.0"
+  }
 }

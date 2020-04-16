@@ -1,5 +1,5 @@
 {
-  "name": "eslint-my-configs",
+  "name": "eslint-my-rules",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zero-plusplus/eslint-my-configs.git"
+    "url": "git+https://github.com/zero-plusplus/eslint-my-rules.git"
   },
   "author": "zero-plusplus",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/zero-plusplus/eslint-my-configs/issues"
+    "url": "https://github.com/zero-plusplus/eslint-my-rules/issues"
   },
-  "homepage": "https://github.com/zero-plusplus/eslint-my-configs#readme",
+  "homepage": "https://github.com/zero-plusplus/eslint-my-rules#readme",
   "devDependencies": {
     "eslint": "^6.8.0"
   },

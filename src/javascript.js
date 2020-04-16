@@ -6,8 +6,8 @@ const indentSize = 2;
 const variableRegex = '^(?:_|[a-z$][a-zA-Z0-9$]*(?:|_[a-z0-9$]+))$';
 
 module.exports = {
-  indentSize: indentSize,
-  variableRegex: variableRegex,
+  indentSize,
+  variableRegex,
   rules: {
     // Possible Errors
     // https://eslint.org/docs/rules/#possible-errors

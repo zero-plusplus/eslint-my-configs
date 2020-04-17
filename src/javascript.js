@@ -259,8 +259,8 @@ module.exports = {
     'object-curly-newline': [ 'error', { multiline: true } ],
     'object-curly-spacing': [ 'error', 'always' ],
     'object-property-newline': [ 'error', { allowMultiplePropertiesPerLine: true } ],
-    'one-var': [ 'error', 'never' ],
-    'one-var-declaration-per-line': 'off', // Set 'off' because 'never' is specified in 'one-var'
+    'one-var': 'off', // I think it is better to use one declarator when initializing related variables. Everything else requires a declarator. This setting doesn't have it
+    'one-var-declaration-per-line': 'off', // Same reason as 'one-var'
     'operator-assignment': 'error',
     'operator-linebreak': [ 'error', 'before' ],
     'padded-blocks': [ 'error', 'never' ],

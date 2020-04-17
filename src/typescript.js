@@ -142,7 +142,7 @@ module.exports = {
     '@typescript-eslint/no-extra-parens': 'error',
     '@typescript-eslint/no-extra-semi': 'error',
     'no-magic-numbers': 'off',
-    '@typescript-eslint/no-magic-numbers': 'error',
+    '@typescript-eslint/no-magic-numbers': 'off', // // I think that it becomes difficult to read if the commonly used numbers such as 0 and -1 are restricted
     '@typescript-eslint/no-unused-expressions': 'error',
     'no-unused-vars': 'off',
     '@typescript-eslint/no-unused-vars': [ 'error', { 'args': 'none' } ], //

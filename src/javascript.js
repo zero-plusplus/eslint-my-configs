@@ -71,7 +71,7 @@ module.exports = {
     'class-methods-use-this': 'error',
     'complexity': 'off', // I don't know the proper value
     'consistent-return': 'error',
-    'curly': [ 'error', 'multi', 'consistent' ],
+    'curly': 'off', // I think that curly braces can be omitted only when writing consecutive if statements that have only one statement. But this setting does not have it
     'default-case': 'error',
     'default-param-last': 'error',
     'dot-location': [ 'error', 'property' ],

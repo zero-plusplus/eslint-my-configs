@@ -171,7 +171,7 @@ module.exports = {
     'no-new-require': 'error',
     'no-path-concat': 'error',
     'no-process-env': 'off', // I don't know the alternative to "process.env".
-    'no-process-exit': 'error',
+    'no-process-exit': 'off', // I don't know of any other means of returning status code
     'no-restricted-modules': 'off', // It should be changed depending on the project. So by default 'off'
     'no-sync': 'error',
 

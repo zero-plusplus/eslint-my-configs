@@ -222,8 +222,8 @@ module.exports = {
       },
     ],
     'lines-between-class-members': [ 'error', 'never' ],
-    'max-depth': 'off', // I think it is better to specify max-len instead of nesting depth
-    'max-len': [ 'error', { code: 120, ignoreComments: true } ],
+    'max-depth': 'off', // I don't know the proper value
+    'max-len': 'off', // It may be better to fit on one line except in extreme cases
     'max-lines': 'off', // I think that file division should not be done by the number of lines
     'max-lines-per-function': 'off', // I think that function division should not be done by the number of rows
     'max-nested-callbacks': 'off', // Same reason as max-depth

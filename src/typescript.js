@@ -118,7 +118,7 @@ module.exports = {
     '@typescript-eslint/switch-exhaustiveness-check': 'off',
     '@typescript-eslint/triple-slash-reference': 'error',
     '@typescript-eslint/type-annotation-spacing': 'error',
-    '@typescript-eslint/typedef': 'error',
+    '@typescript-eslint/typedef': 'off', // It is better to pass the following arguments to tsconfig. --noImplicitAny and/or --strictPropertyInitialization
     '@typescript-eslint/unbound-method': 'error',
     '@typescript-eslint/unified-signatures': 'error',
 

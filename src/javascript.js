@@ -149,7 +149,7 @@ module.exports = {
 
     // Variables
     // https://eslint.org/docs/rules/#variables
-    'init-declarations': 'error',
+    'init-declarations': 'off', // I think I should set the initial value when needed
     'no-delete-var': 'error',
     'no-label-var': 'error',
     'no-restricted-globals': 'error',

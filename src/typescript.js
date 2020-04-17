@@ -3,7 +3,6 @@
 const {
   indentSize,
   rules,
-  variableRegex,
 } = require('./javascript');
 
 module.exports = {
@@ -15,7 +14,7 @@ module.exports = {
     '@typescript-eslint/adjacent-overload-signatures': 'error',
     '@typescript-eslint/array-type': [ 'error', { default: 'array-simple' } ],
     '@typescript-eslint/await-thenable': 'error',
-    '@typescript-eslint/ban-ts-comment': 'off',
+    '@typescript-eslint/ban-ts-comment': 'error',
     '@typescript-eslint/ban-types': 'error',
     '@typescript-eslint/class-literal-property-style': [ 'error', 'fields' ],
     '@typescript-eslint/consistent-type-assertions': 'error',
@@ -65,9 +64,9 @@ module.exports = {
     // [
     //   'error',
     //   {
-    //     selector: 'variableLike',
-    //     format: null,
-    //     custom: { regex: variableRegex, match: true },
+    //     Selector: 'variableLike',
+    //     Format: null,
+    //     Custom: { regex: variableRegex, match: true },
     //   },
     // ],
     '@typescript-eslint/no-base-to-string': 'error',

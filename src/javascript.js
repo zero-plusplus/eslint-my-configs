@@ -99,7 +99,7 @@ module.exports = {
     'no-implicit-coercion': 'error',
     'no-implicit-globals': 'error',
     'no-implied-eval': 'error',
-    'no-invalid-this': 'error',
+    'no-invalid-this': 'off', // I think it's awkward to get an error when using "this" setted in the callback.
     'no-iterator': 'error',
     'no-labels': 'off',
     'no-lone-blocks': 'error',

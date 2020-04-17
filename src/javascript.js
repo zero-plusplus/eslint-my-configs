@@ -104,7 +104,7 @@ module.exports = {
     'no-labels': 'off',
     'no-lone-blocks': 'error',
     'no-loop-func': 'error',
-    'no-magic-numbers': 'error',
+    'no-magic-numbers': 'error', //
     'no-multi-spaces': 'error',
     'no-multi-str': 'error',
     'no-new': 'error',
@@ -170,7 +170,7 @@ module.exports = {
     'no-mixed-requires': 'error',
     'no-new-require': 'error',
     'no-path-concat': 'error',
-    'no-process-env': 'error',
+    'no-process-env': 'off', // I don't know the alternative to "process.env".
     'no-process-exit': 'error',
     'no-restricted-modules': 'off', // It should be changed depending on the project. So by default 'off'
     'no-sync': 'error',
@@ -264,13 +264,14 @@ module.exports = {
     'operator-assignment': 'error',
     'operator-linebreak': [ 'error', 'before' ],
     'padded-blocks': [ 'error', 'never' ],
-    'padding-line-between-statements': [
-      'error',
-      { blankLine: 'always', prev: 'directive', next: '*' },
-      { blankLine: 'any', prev: 'directive', next: 'directive' },
-      { blankLine: 'always', prev: [ 'const', 'let', 'var' ], next: '*' },
-      { blankLine: 'any', prev: [ 'const', 'let', 'var' ], next: [ 'const', 'let', 'var' ] },
-    ],
+    'padding-line-between-statements': 'off', // I think a line break needs a logical reason. Automatic line breaks can't cover everything
+    // [
+    //   'error',
+    //   { blankLine: 'always', prev: 'directive', next: '*' },
+    //   { blankLine: 'any', prev: 'directive', next: 'directive' },
+    //   { blankLine: 'always', prev: [ 'const', 'let', 'var' ], next: '*' },
+    //   { blankLine: 'any', prev: [ 'const', 'let', 'var' ], next: [ 'const', 'let', 'var' ] },
+    // ],
     'prefer-exponentiation-operator': 'error',
     'prefer-object-spread': 'error',
     'quote-props': [ 'error', 'consistent' ],

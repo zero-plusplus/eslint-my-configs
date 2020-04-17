@@ -2,20 +2,20 @@
 
 const indentSize = 2;
 
-// const idRegexMap = {
-//   default: '(?<default>^_|[a-z$][a-zA-Z0-9$]*(?:|_[a-z0-9$]+)$)',
+// Const idRegexMap = {
+//   Default: '(?<default>^_|[a-z$][a-zA-Z0-9$]*(?:|_[a-z0-9$]+)$)',
 //   PascalCase: '(?<PascalCase>^_|[A-Z][a-zA-Z]*$)',
 //   UPPERCASE: '(?<UPPERCASE>^_|[A-Z][A-Z0-9]*$)',
-//   create(...names) {
-//     const regexList = [];
-//     for (const name of names) {
-//       if (name in this) {
-//         regexList.push(this[name]);
+//   Create(...names) {
+//     Const regexList = [];
+//     For (const name of names) {
+//       If (name in this) {
+//         RegexList.push(this[name]);
 //       }
 //     }
 
-//     const regex = `${regexList.join('|')}`;
-//     return regex;
+//     Const regex = `${regexList.join('|')}`;
+//     Return regex;
 //   }
 // };
 
@@ -182,7 +182,7 @@ module.exports = {
     'array-element-newline': [ 'error', 'consistent' ],
     'block-spacing': 'error',
     'brace-style': [ 'error', 'stroustrup' ],
-    'capitalized-comments': 'error',
+    'capitalized-comments': 'off', // I think it is unnecessary because an error will occur even when commenting out the temporary source code.
     'comma-dangle': [ 'error', 'always-multiline' ],
     'comma-spacing': [ 'error', { before: false, after: true } ],
     'comma-style': [ 'error', 'last' ],

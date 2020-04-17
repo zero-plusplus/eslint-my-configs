@@ -2,12 +2,25 @@
 
 const indentSize = 2;
 
-// Example: '_', '$', 'foo', 'fooBar', 'fooBar_baz'
-const variableRegex = '^(?:_|[a-z$][a-zA-Z0-9$]*(?:|_[a-z0-9$]+))$';
+// const idRegexMap = {
+//   default: '(?<default>^_|[a-z$][a-zA-Z0-9$]*(?:|_[a-z0-9$]+)$)',
+//   PascalCase: '(?<PascalCase>^_|[A-Z][a-zA-Z]*$)',
+//   UPPERCASE: '(?<UPPERCASE>^_|[A-Z][A-Z0-9]*$)',
+//   create(...names) {
+//     const regexList = [];
+//     for (const name of names) {
+//       if (name in this) {
+//         regexList.push(this[name]);
+//       }
+//     }
+
+//     const regex = `${regexList.join('|')}`;
+//     return regex;
+//   }
+// };
 
 module.exports = {
   indentSize,
-  variableRegex,
   rules: {
     // Possible Errors
     // https://eslint.org/docs/rules/#possible-errors
@@ -184,12 +197,7 @@ module.exports = {
     'function-paren-newline': 'error',
     'id-blacklist': 'off', // It should be changed depending on the project. So by default 'off'
     'id-length': 'off', // It should be changed depending on the project. So by default 'off'
-    'id-match': [
-      'error', variableRegex, {
-        properties: true,
-        onlyDeclarations: true,
-      },
-    ], // It should be changed depending on the project. So by default 'off'
+    'id-match': 'off', // I prefer compound syntax like "commandData_base64". Therefore, the regular expression becomes complicated. You may enable this feature if eslint is able to edit the comments on error messages
     'implicit-arrow-linebreak': [ 'error', 'beside' ],
     'indent': [ 'error', indentSize, { SwitchCase: 1 } ],
     'jsx-quotes': 'error',

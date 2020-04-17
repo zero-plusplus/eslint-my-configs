@@ -61,14 +61,15 @@ module.exports = {
       },
     ],
     '@typescript-eslint/method-signature-style': 'error',
-    '@typescript-eslint/naming-convention': [
-      'error',
-      {
-        selector: 'variableLike',
-        format: null,
-        custom: { regex: variableRegex, match: true },
-      },
-    ],
+    '@typescript-eslint/naming-convention': 'off', // I prefer compound syntax like "commandData_base64". Therefore, the regular expression becomes complicated. You may enable this feature if eslint is able to edit the comments on error messages
+    // [
+    //   'error',
+    //   {
+    //     selector: 'variableLike',
+    //     format: null,
+    //     custom: { regex: variableRegex, match: true },
+    //   },
+    // ],
     '@typescript-eslint/no-base-to-string': 'error',
     '@typescript-eslint/no-dynamic-delete': 'error',
     '@typescript-eslint/no-empty-interface': 'error',

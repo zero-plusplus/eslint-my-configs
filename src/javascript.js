@@ -232,7 +232,7 @@ module.exports = {
     'max-statements-per-line': 'off', // I don't know the proper value
     'multiline-comment-style': 'off', // JsDoc comments should be block comments, other comments should be line comments, but that setting does not exist
     'multiline-ternary': 'off', // I think that you should decide whether to start a line break depending on the number of columns, but that setting does not exist
-    'new-cap': [ 'error', { newIsCap: true } ],
+    'new-cap': 'off', // Whether it starts with a capital letter or not depends on the project. This setting is a hindrance when using other projects
     'new-parens': 'error',
     'newline-per-chained-call': 'error',
     'no-array-constructor': 'error',

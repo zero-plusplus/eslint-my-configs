@@ -191,7 +191,7 @@ module.exports = {
     'eol-last': [ 'error', 'always' ],
     'func-call-spacing': [ 'error', 'never' ],
     'func-name-matching': 'error',
-    'func-names': [ 'error', 'as-needed' ],
+    'func-names': 'off', // I think it's redundant to even name the callback
     'func-style': 'error',
     'function-call-argument-newline': [ 'error', 'consistent' ],
     'function-paren-newline': 'error',

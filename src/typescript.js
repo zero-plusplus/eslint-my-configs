@@ -151,7 +151,7 @@ module.exports = {
     'no-useless-constructor': 'off',
     '@typescript-eslint/no-useless-constructor': 'error',
     'quotes': 'off',
-    '@typescript-eslint/quotes': 'error',
+    '@typescript-eslint/quotes': [ 'error', 'single', { allowTemplateLiterals: true } ],
     'require-await': 'off',
     '@typescript-eslint/require-await': 'error',
     'no-return-await': 'off',

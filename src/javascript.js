@@ -105,7 +105,7 @@ module.exports = {
     'no-lone-blocks': 'error',
     'no-loop-func': 'error',
     'no-magic-numbers': 'off', // I think that it becomes difficult to read if the commonly used numbers such as 0 and -1 are restricted
-    'no-multi-spaces': 'error',
+    'no-multi-spaces': [ 'error', { 'ignoreEOLComments': true } ],
     'no-multi-str': 'error',
     'no-new': 'error',
     'no-new-func': 'error',

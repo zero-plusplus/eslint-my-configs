@@ -205,22 +205,7 @@ module.exports = {
     'keyword-spacing': 'error',
     'line-comment-position': 'off', // I think that the easy-to-see position will change depending on the situation
     'linebreak-style': [ 'error', 'windows' ], // Because I use Windows only
-    'lines-around-comment': [
-      'error', {
-        beforeBlockComment: true,
-        afterBlockComment: false,
-        beforeLineComment: true,
-        afterLineComment: false,
-        allowBlockStart: true,
-        allowBlockEnd: false,
-        allowObjectStart: true,
-        allowObjectEnd: false,
-        allowArrayStart: true,
-        allowArrayEnd: false,
-        allowClassStart: true,
-        allowClassEnd: false,
-      },
-    ],
+    'lines-around-comment': 'off', // Same reason as line-comment-position
     'lines-between-class-members': [ 'error', 'never' ],
     'max-depth': 'off', // I don't know the proper value
     'max-len': 'off', // It may be better to fit on one line except in extreme cases

@@ -131,7 +131,7 @@ module.exports = {
     'default-param-last': 'off',
     '@typescript-eslint/default-param-last': 'error',
     'func-call-spacing': 'off',
-    '@typescript-eslint/func-call-spacing': 'error',
+    '@typescript-eslint/func-call-spacing': [ 'error', 'never' ],
     'indent': 'off',
     '@typescript-eslint/indent': [ 'error', indentSize, { 'SwitchCase': 1 } ],
     'no-array-constructor': 'off',

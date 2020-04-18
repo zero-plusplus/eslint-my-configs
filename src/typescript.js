@@ -1,13 +1,10 @@
 'use strict';
 
-const {
-  indentSize,
-  rules,
-} = require('./javascript');
+const { rules: jsRules } = require('./javascript');
 
 module.exports = {
   rules: {
-    ...rules,
+    ...jsRules,
 
     // TypeScript rules
     // https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/eslint-plugin#supported-rules
@@ -125,40 +122,40 @@ module.exports = {
     // Extension rules
     // https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/eslint-plugin#extension-rules
     'brace-style': 'off',
-    '@typescript-eslint/brace-style': [ 'error', 'stroustrup' ],
+    '@typescript-eslint/brace-style': jsRules['brace-style'],
     'comma-spacing': 'off',
-    '@typescript-eslint/comma-spacing': [ 'error', { 'before': false, 'after': true } ],
+    '@typescript-eslint/comma-spacing': jsRules['comma-spacing'],
     'default-param-last': 'off',
     '@typescript-eslint/default-param-last': 'error',
     'func-call-spacing': 'off',
-    '@typescript-eslint/func-call-spacing': [ 'error', 'never' ],
+    '@typescript-eslint/func-call-spacing': jsRules['func-call-spacing'],
     'indent': 'off',
-    '@typescript-eslint/indent': [ 'error', indentSize, { 'SwitchCase': 1 } ],
+    '@typescript-eslint/indent': jsRules.indent,
     'no-array-constructor': 'off',
-    '@typescript-eslint/no-array-constructor': 'error',
+    '@typescript-eslint/no-array-constructor': jsRules['no-array-constructor'],
     'no-dupe-class-members': 'off',
-    '@typescript-eslint/no-dupe-class-members': 'error',
+    '@typescript-eslint/no-dupe-class-members': jsRules['no-dupe-class-members'],
     '@typescript-eslint/no-empty-function': 'error',
     '@typescript-eslint/no-extra-parens': 'error',
     '@typescript-eslint/no-extra-semi': 'error',
     'no-magic-numbers': 'off',
-    '@typescript-eslint/no-magic-numbers': 'off', // // I think that it becomes difficult to read if the commonly used numbers such as 0 and -1 are restricted
+    '@typescript-eslint/no-magic-numbers': jsRules['no-magic-numbers'],
     '@typescript-eslint/no-unused-expressions': 'error',
     'no-unused-vars': 'off',
-    '@typescript-eslint/no-unused-vars': [ 'error', { 'args': 'none' } ], //
+    '@typescript-eslint/no-unused-vars': jsRules['no-unused-vars'],
     'no-use-before-define': 'off',
-    '@typescript-eslint/no-use-before-define': 'error',
+    '@typescript-eslint/no-use-before-define': jsRules['no-use-before-define'],
     'no-useless-constructor': 'off',
-    '@typescript-eslint/no-useless-constructor': 'error',
+    '@typescript-eslint/no-useless-constructor': jsRules['no-useless-constructor'],
     'quotes': 'off',
-    '@typescript-eslint/quotes': [ 'error', 'single', { allowTemplateLiterals: true } ],
+    '@typescript-eslint/quotes': jsRules.quotes,
     'require-await': 'off',
-    '@typescript-eslint/require-await': 'error',
+    '@typescript-eslint/require-await': jsRules['require-await'],
     'no-return-await': 'off',
-    '@typescript-eslint/return-await': 'error',
+    '@typescript-eslint/return-await': jsRules['no-return-await'],
     'semi': 'off',
-    '@typescript-eslint/semi': 'error',
+    '@typescript-eslint/semi': jsRules.semi,
     'space-before-function-paren': 'off',
-    '@typescript-eslint/space-before-function-paren': 'error',
+    '@typescript-eslint/space-before-function-paren': jsRules['space-before-function-paren'],
   },
 };

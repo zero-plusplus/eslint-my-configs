@@ -125,7 +125,7 @@ module.exports = {
     // Extension rules
     // https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/eslint-plugin#extension-rules
     'brace-style': 'off',
-    '@typescript-eslint/brace-style': 'error',
+    '@typescript-eslint/brace-style': [ 'error', 'stroustrup' ],
     'comma-spacing': 'off',
     '@typescript-eslint/comma-spacing': [ 'error', { 'before': false, 'after': true } ],
     'default-param-last': 'off',

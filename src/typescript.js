@@ -102,7 +102,7 @@ module.exports = {
     '@typescript-eslint/prefer-nullish-coalescing': 'error',
     '@typescript-eslint/prefer-optional-chain': 'error',
     '@typescript-eslint/prefer-readonly': 'error',
-    '@typescript-eslint/prefer-readonly-parameter-types': 'error',
+    '@typescript-eslint/prefer-readonly-parameter-types': 'off', // The error could not be resolved using types such as "DeepReadonly". "no-param-reassign" is enough
     '@typescript-eslint/prefer-reduce-type-parameter': 'error',
     '@typescript-eslint/prefer-regexp-exec': 'off',
     '@typescript-eslint/prefer-string-starts-ends-with': 'error',

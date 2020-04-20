@@ -84,7 +84,7 @@ module.exports = {
     '@typescript-eslint/no-require-imports': 'error',
     '@typescript-eslint/no-this-alias': 'error',
     '@typescript-eslint/no-throw-literal': 'error',
-    '@typescript-eslint/no-type-alias': 'error',
+    '@typescript-eslint/no-type-alias': [ 'error', { allowAliases: 'always' } ],
     '@typescript-eslint/no-unnecessary-boolean-literal-compare': 'error',
     '@typescript-eslint/no-unnecessary-condition': 'error',
     '@typescript-eslint/no-unnecessary-qualifier': 'error',

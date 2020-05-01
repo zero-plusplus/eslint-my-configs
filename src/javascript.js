@@ -153,7 +153,7 @@ module.exports = {
     'no-delete-var': 'error',
     'no-label-var': 'error',
     'no-restricted-globals': 'error',
-    'no-shadow': [ 'error', { builtinGlobals: true, allow: [ 'resolve', 'reject', 'done' ] } ],
+    'no-shadow': [ 'error', { builtinGlobals: true, allow: [ 'resolve', 'reject', 'done', 'context' ] } ],
     'no-shadow-restricted-names': 'error',
     'no-undef': 'error',
     'no-undef-init': 'error',

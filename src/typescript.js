@@ -144,7 +144,7 @@ module.exports = {
     'no-magic-numbers': 'off',
     '@typescript-eslint/no-magic-numbers': jsRules['no-magic-numbers'],
     'no-unused-expressions': 'off',
-    '@typescript-eslint/no-unused-expressions': 'error',
+    '@typescript-eslint/no-unused-expressions': 'off', // Not compatible with TS3.7 Optional chaining
     'no-unused-vars': 'off',
     '@typescript-eslint/no-unused-vars': jsRules['no-unused-vars'],
     'no-use-before-define': 'off',

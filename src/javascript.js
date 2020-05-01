@@ -237,7 +237,7 @@ module.exports = {
     'no-tabs': 'error',
     'no-ternary': 'off', // There is a problem that it is difficult for beginners to understand, but I think that once understood, it is easier to understand than 'if' sentences
     'no-trailing-spaces': 'off', // Follow id-match
-    'no-underscore-dangle': 'error',
+    'no-underscore-dangle': 'off', // It is common to use underscore for the name of the "baking field" used when defining the "property"
     'no-unneeded-ternary': 'error',
     'no-whitespace-before-property': 'error',
     'nonblock-statement-body-position': 'error',

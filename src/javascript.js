@@ -38,18 +38,21 @@ module.exports = {
     'no-dupe-else-if': 'error',
     'no-dupe-keys': 'error',
     'no-duplicate-case': 'error',
+    'no-empty': [ 'error', { 'allowEmptyCatch': true } ],
     'no-empty-character-class': 'error',
     'no-ex-assign': 'error',
     'no-extra-boolean-cast': 'error',
-    'no-extra-parens': 'error',
+    'no-extra-parens': 'off', // Readability should not be enforced as it depends on the situation
     'no-extra-semi': 'error',
     'no-func-assign': 'error',
     'no-import-assign': 'error',
     'no-inner-declarations': 'error',
     'no-invalid-regexp': 'error',
     'no-irregular-whitespace': 'error',
+    'no-loss-of-precision': 'error',
     'no-misleading-character-class': 'error',
     'no-obj-calls': 'error',
+    'no-promise-executor-return': 'error',
     'no-prototype-builtins': 'error',
     'no-regex-spaces': 'error',
     'no-setter-return': 'error',
@@ -57,8 +60,10 @@ module.exports = {
     'no-template-curly-in-string': 'off',
     'no-unexpected-multiline': 'error',
     'no-unreachable': 'error',
+    'no-unreachable-loop': 'error',
     'no-unsafe-finally': 'error',
     'no-unsafe-negation': 'error',
+    'no-useless-backreference': 'error',
     'require-atomic-updates': 'error',
     'use-isnan': 'error',
     'valid-typeof': 'error',
@@ -68,11 +73,12 @@ module.exports = {
     'accessor-pairs': 'error',
     'array-callback-return': 'error',
     'block-scoped-var': 'error',
-    'class-methods-use-this': 'error',
+    'class-methods-use-this': 'off', // It is difficult to use because it is also affected by the implements method. It's not a very useful rule.
     'complexity': 'off', // I don't know the proper value
     'consistent-return': 'error',
     'curly': 'off', // I think that curly braces can be omitted only when writing consecutive if statements that have only one statement. But this setting does not have it
     'default-case': 'error',
+    'default-case-last': 'error',
     'default-param-last': 'error',
     'dot-location': [ 'error', 'property' ],
     'dot-notation': 'error',
@@ -86,7 +92,7 @@ module.exports = {
     'no-constructor-return': 'error',
     'no-div-regex': 'error',
     'no-else-return': 'error',
-    'no-empty-function': 'off',
+    'no-empty-function': 'off', // Use an empty function when using the noop function. Using a library will solve this problem, but there is no need to make it a rule.
     'no-empty-pattern': 'error',
     'no-eq-null': 'error',
     'no-eval': 'error',
@@ -101,7 +107,7 @@ module.exports = {
     'no-implied-eval': 'error',
     'no-invalid-this': 'off', // I think it's awkward to get an error when using "this" setted in the callback.
     'no-iterator': 'error',
-    'no-labels': 'off',
+    'no-labels': 'error',
     'no-lone-blocks': 'error',
     'no-loop-func': 'error',
     'no-magic-numbers': 'off', // I think that it becomes difficult to read if the commonly used numbers such as 0 and -1 are restricted
@@ -126,6 +132,7 @@ module.exports = {
     'no-unmodified-loop-condition': 'error',
     'no-unused-expressions': 'error',
     'no-unused-labels': 'error',
+    'no-useless-call': 'error',
     'no-useless-catch': 'error',
     'no-useless-concat': 'error',
     'no-useless-escape': 'error',
@@ -133,7 +140,7 @@ module.exports = {
     'no-void': 'error',
     'no-warning-comments': 'error',
     'no-with': 'error',
-    'prefer-named-capture-group': 'error',
+    'prefer-named-capture-group': 'off', // This rule is redundant when dealing with simple regular expressions
     'prefer-promise-reject-errors': 'error',
     'prefer-regex-literals': 'error',
     'radix': 'error',
@@ -153,13 +160,13 @@ module.exports = {
     'no-delete-var': 'error',
     'no-label-var': 'error',
     'no-restricted-globals': 'error',
-    'no-shadow': [ 'error', { builtinGlobals: true, allow: [ 'resolve', 'reject', 'done', 'context' ] } ],
+    'no-shadow': 'off', // Utility functions that are used only with that function often deal with the same value, and in that case, we decided it would be less confusing to use the same name
     'no-shadow-restricted-names': 'error',
     'no-undef': 'error',
     'no-undef-init': 'error',
     'no-undefined': 'error',
     'no-unused-vars': [ 'error', { args: 'none' } ],
-    'no-use-before-define': 'error',
+    'no-use-before-define': [ 'error', { 'classes': false } ],
 
     // Node.js and CommonJS
     // https://eslint.org/docs/rules/#node-js-and-commonjs
@@ -182,6 +189,7 @@ module.exports = {
     'array-element-newline': [ 'error', 'consistent' ],
     'block-spacing': 'error',
     'brace-style': [ 'error', 'stroustrup' ],
+    'camelcase': 'off', // Sometimes using camelcase + underscore, as in 'elapsedTime_ms'
     'capitalized-comments': 'off', // I think it is unnecessary because an error will occur even when commenting out the temporary source code.
     'comma-dangle': [ 'error', 'always-multiline' ],
     'comma-spacing': [ 'error', { before: false, after: true } ],
@@ -195,7 +203,7 @@ module.exports = {
     'func-style': 'error',
     'function-call-argument-newline': [ 'error', 'consistent' ],
     'function-paren-newline': 'error',
-    'id-blacklist': 'off', // It should be changed depending on the project. So by default 'off'
+    'id-denylist': 'off', // Decided it wasn't important enough to go through the trouble of creating a list of inappropriate names
     'id-length': 'off', // It should be changed depending on the project. So by default 'off'
     'id-match': 'off', // I prefer compound syntax like "commandData_base64". Therefore, the regular expression becomes complicated. You may enable this feature if eslint is able to edit the comments on error messages
     'implicit-arrow-linebreak': [ 'error', 'beside' ],
@@ -219,7 +227,7 @@ module.exports = {
     'multiline-ternary': 'off', // I think that you should decide whether to start a line break depending on the number of columns, but that setting does not exist
     'new-cap': 'off', // Whether it starts with a capital letter or not depends on the project. This setting is a hindrance when using other projects
     'new-parens': 'error',
-    'newline-per-chained-call': 'error',
+    'newline-per-chained-call': 'off', // Readability depends on the situation and shouldn't be enforced
     'no-array-constructor': 'error',
     'no-bitwise': 'error',
     'no-continue': 'off', // I think it's more readable to use 'continue' with an unhandled pattern like type-guards
@@ -232,7 +240,7 @@ module.exports = {
     'no-negated-condition': 'error',
     'no-nested-ternary': 'error',
     'no-new-object': 'error',
-    'no-plusplus': [ 'error', { allowForLoopAfterthoughts: true } ],
+    'no-plusplus': 'off', // Decided that in many cases it would be difficult to see without this syntax
     'no-restricted-syntax': 'off', // No clear reason to set. If set, it should be reset for each project
     'no-tabs': 'error',
     'no-ternary': 'off', // There is a problem that it is difficult for beginners to understand, but I think that once understood, it is easier to understand than 'if' sentences
@@ -279,7 +287,7 @@ module.exports = {
 
     // ECMAScript 6
     // https://eslint.org/docs/rules/#ecmascript-6
-    'arrow-body-style': 'error',
+    'arrow-body-style': 'off', // This rule is not flexible enough
     'arrow-parens': 'error',
     'arrow-spacing': 'error',
     'constructor-super': 'error',
@@ -290,6 +298,7 @@ module.exports = {
     'no-dupe-class-members': 'error',
     'no-duplicate-imports': 'error',
     'no-new-symbol': 'error',
+    'no-restricted-exports': 'off', // Decided it wasn't important enough to go through the trouble of creating a list of inappropriate names
     'no-restricted-imports': 'off', // It should be changed depending on the project. So by default 'off'
     'no-this-before-super': 'error',
     'no-useless-computed-key': 'error',
@@ -299,7 +308,7 @@ module.exports = {
     'object-shorthand': 'error',
     'prefer-arrow-callback': 'error',
     'prefer-const': 'error',
-    'prefer-destructuring': [ 'error', { AssignmentExpression: { array: true } } ],
+    'prefer-destructuring': 'off', // This rule is annoying if a variable with the same name already exists
     'prefer-numeric-literals': 'error',
     'prefer-rest-params': 'error',
     'prefer-spread': 'error',

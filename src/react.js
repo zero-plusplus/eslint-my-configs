@@ -85,7 +85,7 @@ module.exports = {
     'react/jsx-props-no-spreading': 'off', // This rule gets in the way if you want to set up common props
     'react/jsx-sort-default-props': 'error',
     'react/jsx-sort-props': [ 'error', { shorthandFirst: true, callbacksLast: true, reservedFirst: true } ],
-    'react/jsx-space-before-closing': 'error',
+    'react/jsx-tag-spacing': 'error',
     'react/jsx-uses-react': 'error',
     'react/jsx-uses-vars': 'error',
     'react/jsx-wrap-multilines': 'error',

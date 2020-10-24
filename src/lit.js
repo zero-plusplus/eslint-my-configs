@@ -3,17 +3,19 @@
 // yarn add -D eslint-plugin-lit
 
 module.exports = {
-  'lit/attribute-value-entities': 'error',
-  'lit/binding-positions': 'error',
-  'lit/no-duplicate-template-bindings': 'error',
-  'lit/no-invalid-escape-sequences': 'error',
-  'lit/no-invalid-html': 'error',
-  'lit/no-legacy-template-syntax': 'error',
-  'lit/no-private-properties': 'error',
-  'lit/no-property-change-update': 'error',
-  'lit/no-template-arrow': 'error',
-  'lit/no-template-bind': 'error',
-  'lit/no-template-map': 'off', // I think it would be easier to see it placed inline
-  'lit/no-useless-template-literals': 'error',
-  'lit/no-value-attribute': 'error',
+  rules: {
+    'lit/attribute-value-entities': 'error',
+    'lit/binding-positions': 'error',
+    'lit/no-duplicate-template-bindings': 'error',
+    'lit/no-invalid-escape-sequences': 'error',
+    'lit/no-invalid-html': 'error',
+    'lit/no-legacy-template-syntax': 'error',
+    'lit/no-private-properties': 'error',
+    'lit/no-property-change-update': 'error',
+    'lit/no-template-arrow': 'error',
+    'lit/no-template-bind': 'error',
+    'lit/no-template-map': 'off', // I think it would be easier to see it placed inline
+    'lit/no-useless-template-literals': 'error',
+    'lit/no-value-attribute': 'error',
+  }
 }

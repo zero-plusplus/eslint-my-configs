@@ -1,5 +1,3 @@
-'use strict';
-
 const { rules: jsRules } = require('./javascript');
 
 module.exports = {

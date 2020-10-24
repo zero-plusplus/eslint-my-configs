@@ -1,7 +1,4 @@
-'use strict';
-// name: lit
 // yarn add -D eslint-plugin-lit
-
 module.exports = {
   pluginName: 'lit',
   rules: {

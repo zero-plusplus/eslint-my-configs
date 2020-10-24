@@ -1,4 +1,4 @@
-// yarn add -D eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-jsx-a11y
+// yarn add -D eslint-plugin-react
 module.exports = {
   pluginName: 'react',
   // https://github.com/yannickcr/eslint-plugin-react/tree/master

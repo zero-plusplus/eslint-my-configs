@@ -1,3 +1,4 @@
+// yarn add -D @typescript-eslint
 const { rules: jsRules } = require('./javascript');
 
 module.exports = {

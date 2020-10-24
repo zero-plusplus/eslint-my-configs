@@ -1,3 +1,4 @@
+// yarn add -D eslint-plugin-jsx-a11y
 module.exports = {
   pluginName: 'jsx-a11y',
   rules: {

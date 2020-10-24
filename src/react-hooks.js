@@ -1,3 +1,4 @@
+// yarn add -D eslint-plugin-react-hooks
 module.exports = {
   pluginName: 'react-hooks',
   rules: {

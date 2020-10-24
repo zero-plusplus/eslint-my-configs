@@ -3,6 +3,7 @@
 // yarn add -D eslint-plugin-lit
 
 module.exports = {
+  pluginName: 'lit',
   rules: {
     'lit/attribute-value-entities': 'error',
     'lit/binding-positions': 'error',

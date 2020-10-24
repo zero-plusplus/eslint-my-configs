@@ -3,6 +3,7 @@
 const { rules: jsRules } = require('./javascript');
 
 module.exports = {
+  pluginName: '@typescript-eslint',
   rules: {
     ...jsRules,
     // Wait for improve

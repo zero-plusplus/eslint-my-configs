@@ -20,6 +20,7 @@ const indentSize = 2;
 // };
 
 module.exports = {
+  pluginName: null,
   indentSize,
   rules: {
     // Possible Errors

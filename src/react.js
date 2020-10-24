@@ -2,6 +2,7 @@
 // yarn add -D eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-jsx-a11y
 
 module.exports = {
+  pluginName: 'react',
   // https://github.com/yannickcr/eslint-plugin-react/tree/master
   rules: {
     'react/boolean-prop-naming': 'off', // This setting will be an imposition of mine preferences

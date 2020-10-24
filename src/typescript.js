@@ -3,6 +3,7 @@ const { rules: jsRules } = require('./javascript');
 
 module.exports = {
   pluginName: '@typescript-eslint',
+  parserName: '@typescript-eslint/parser',
   rules: {
     ...jsRules,
     // Wait for improve

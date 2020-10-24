@@ -1,23 +1,4 @@
-'use strict';
-
 const indentSize = 2;
-
-// Const idRegexMap = {
-//   Default: '(?<default>^_|[a-z$][a-zA-Z0-9$]*(?:|_[a-z0-9$]+)$)',
-//   PascalCase: '(?<PascalCase>^_|[A-Z][a-zA-Z]*$)',
-//   UPPERCASE: '(?<UPPERCASE>^_|[A-Z][A-Z0-9]*$)',
-//   Create(...names) {
-//     Const regexList = [];
-//     For (const name of names) {
-//       If (name in this) {
-//         RegexList.push(this[name]);
-//       }
-//     }
-
-//     Const regex = `${regexList.join('|')}`;
-//     Return regex;
-//   }
-// };
 
 module.exports = {
   pluginName: null,

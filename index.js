@@ -1,13 +1,13 @@
-'use strict';
-
-const javascript = require('./src/javascript.js');
-const typescript = require('./src/typescript.js');
-const react = require('./src/react.js');
-const lit = require('./src/lit.js');
+const javascript = require('./src/javascript');
+const typescript = require('./src/typescript');
+const react = require('./src/react');
+const lit = require('./src/lit');
+const jsxa11y = require('./src/jsx-a11y');
 
 module.exports = {
   javascript,
-  typescript,
+  jsxa11y,
+  lit,
   react,
-  lit
+  typescript,
 };

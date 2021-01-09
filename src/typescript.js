@@ -133,6 +133,7 @@ module.exports = {
     '@typescript-eslint/require-array-sort-compare': 'error',
     '@typescript-eslint/restrict-plus-operands': 'error',
     '@typescript-eslint/restrict-template-expressions': [ 'error', { allowNumber: true, allowBoolean: true } ],
+    '@typescript-eslint/sort-type-union-intersection-members': 'error',
     '@typescript-eslint/strict-boolean-expressions': 'off',
     '@typescript-eslint/switch-exhaustiveness-check': 'off',
     '@typescript-eslint/triple-slash-reference': 'error',

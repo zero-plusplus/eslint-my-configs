@@ -13,7 +13,7 @@ module.exports = {
     'no-compare-neg-zero': 'error',
     'no-cond-assign': 'error',
     'no-console': 'off', // I don't think this setting is needed. This is because console.log may be used even when not debugging
-    'no-constant-condition': 'error',
+    'no-constant-condition': [ 'error',  { 'checkLoops': false } ], // Allow while (true)
     'no-control-regex': 'error',
     'no-debugger': 'error',
     'no-dupe-args': 'error',

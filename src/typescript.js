@@ -201,5 +201,7 @@ module.exports = {
     '@typescript-eslint/semi': jsRules.semi,
     'space-before-function-paren': 'off',
     '@typescript-eslint/space-before-function-paren': jsRules['space-before-function-paren'],
+    'space-infix-ops': 'off',
+    '@typescript-eslint/space-infix-ops': jsRules['space-infix-ops'],
   },
 };

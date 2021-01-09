@@ -113,6 +113,7 @@ module.exports = {
     '@typescript-eslint/no-unsafe-member-access': 'off',
     '@typescript-eslint/no-unsafe-return': 'error',
     '@typescript-eslint/no-var-requires': 'error',
+    '@typescript-eslint/non-nullable-type-assertion-style': 'error',
     '@typescript-eslint/prefer-as-const': 'error',
     '@typescript-eslint/prefer-enum-initializers': 'off', // Setting all enum to default values is a bit much
     '@typescript-eslint/prefer-for-of': 'error',

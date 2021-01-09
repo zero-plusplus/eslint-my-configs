@@ -74,6 +74,7 @@ module.exports = {
     // ],
     '@typescript-eslint/no-base-to-string': 'error',
     '@typescript-eslint/no-confusing-non-null-assertion': 'error',
+    '@typescript-eslint/no-confusing-void-expression': 'error',
     '@typescript-eslint/no-dynamic-delete': 'error',
     '@typescript-eslint/no-empty-interface': 'error',
     '@typescript-eslint/no-explicit-any': 'off',

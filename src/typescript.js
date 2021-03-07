@@ -85,7 +85,7 @@ module.exports = {
     '@typescript-eslint/no-implicit-any-catch': 'error',
     '@typescript-eslint/no-implied-eval': 'error',
     '@typescript-eslint/no-inferrable-types': 'error',
-    '@typescript-eslint/no-invalid-void-type': 'error',
+    '@typescript-eslint/no-invalid-void-type': 'off', // Can't use Promise<void[]> when using Promise.all
     '@typescript-eslint/no-misused-new': 'error',
     '@typescript-eslint/no-misused-promises': 'error',
     '@typescript-eslint/no-namespace': 'error',
@@ -95,15 +95,9 @@ module.exports = {
     '@typescript-eslint/no-require-imports': 'error',
     '@typescript-eslint/no-this-alias': 'error',
     '@typescript-eslint/no-throw-literal': 'error',
-    '@typescript-eslint/no-type-alias': [
-      'error',
-      {
-        allowAliases: 'always',
-        allowCallbacks: 'always',
-      },
-    ],
+    '@typescript-eslint/no-type-alias': 'off', // Not support template literal type
     '@typescript-eslint/no-unnecessary-boolean-literal-compare': 'error',
-    '@typescript-eslint/no-unnecessary-condition': 'error',
+    '@typescript-eslint/no-unnecessary-condition': [ 'error', { allowConstantLoopConditions: true } ],
     '@typescript-eslint/no-unnecessary-qualifier': 'error',
     '@typescript-eslint/no-unnecessary-type-arguments': 'error',
     '@typescript-eslint/no-unnecessary-type-assertion': 'error',
@@ -133,7 +127,7 @@ module.exports = {
     '@typescript-eslint/require-array-sort-compare': 'error',
     '@typescript-eslint/restrict-plus-operands': 'error',
     '@typescript-eslint/restrict-template-expressions': [ 'error', { allowNumber: true, allowBoolean: true } ],
-    '@typescript-eslint/sort-type-union-intersection-members': 'error',
+    '@typescript-eslint/sort-type-union-intersection-members': 'off', // This rule is a hindrance if sorting by role
     '@typescript-eslint/strict-boolean-expressions': 'off',
     '@typescript-eslint/switch-exhaustiveness-check': 'off',
     '@typescript-eslint/triple-slash-reference': 'error',

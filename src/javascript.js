@@ -232,7 +232,7 @@ module.exports = {
     'no-unneeded-ternary': 'error',
     'no-whitespace-before-property': 'error',
     'nonblock-statement-body-position': 'error',
-    'object-curly-newline': [ 'error', { multiline: true } ],
+    'object-curly-newline': [ 'error', { multiline: true, consistent: true } ],
     'object-curly-spacing': [ 'error', 'always' ],
     'object-property-newline': [ 'error', { allowMultiplePropertiesPerLine: true } ],
     'one-var': 'off', // I think it is better to use one declarator when initializing related variables. Everything else requires a declarator. This setting doesn't have it
@@ -289,7 +289,7 @@ module.exports = {
     'no-useless-rename': 'error',
     'no-var': 'error',
     'object-shorthand': 'error',
-    'prefer-arrow-callback': 'error',
+    'prefer-arrow-callback': 'off', // Frameworks like mocha force the use of function expressions
     'prefer-const': 'error',
     'prefer-destructuring': 'off', // This rule is annoying if a variable with the same name already exists
     'prefer-numeric-literals': 'error',

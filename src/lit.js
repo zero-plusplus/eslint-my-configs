@@ -1,6 +1,5 @@
-// yarn add -D eslint-plugin-lit
 module.exports = {
-  pluginName: 'lit',
+  plugins: [ 'lit' ],
   rules: {
     'lit/attribute-value-entities': 'error',
     'lit/binding-positions': 'error',
@@ -15,5 +14,5 @@ module.exports = {
     'lit/no-template-map': 'off', // I think it would be easier to see it placed inline
     'lit/no-useless-template-literals': 'error',
     'lit/no-value-attribute': 'error',
-  }
-}
+  },
+};

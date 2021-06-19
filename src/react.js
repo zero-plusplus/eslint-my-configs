@@ -1,6 +1,6 @@
-// yarn add -D eslint-plugin-react
 module.exports = {
-  pluginName: 'react',
+  plugins: [ 'react', 'react-hooks' ],
+
   // https://github.com/yannickcr/eslint-plugin-react/tree/master
   rules: {
     'react/boolean-prop-naming': 'off', // This setting will be an imposition of mine preferences
@@ -89,5 +89,8 @@ module.exports = {
     'react/jsx-uses-react': 'error',
     'react/jsx-uses-vars': 'error',
     'react/jsx-wrap-multilines': 'error',
+
+    'react-hooks/rules-of-hooks': 'error',
+    'react-hooks/exhaustive-deps': 'error',
   },
 };

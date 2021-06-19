@@ -1,6 +1,5 @@
-// yarn add -D eslint-plugin-jsx-a11y
 module.exports = {
-  pluginName: 'jsx-a11y',
+  plugins: [ 'jsx-a11y' ],
   rules: {
     'jsx-a11y/alt-text': 'error',
     'jsx-a11y/anchor-has-content': 'error',

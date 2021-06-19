@@ -1,8 +1,9 @@
+/* eslint-disable no-dupe-keys */
 const indentSize = 2;
 
 module.exports = {
-  pluginName: null,
-  indentSize,
+  plugins: [ 'unused-imports' ],
+  indentSize: 2,
   rules: {
     // Possible Errors
     // https://eslint.org/docs/rules/#possible-errors
@@ -13,7 +14,7 @@ module.exports = {
     'no-compare-neg-zero': 'error',
     'no-cond-assign': 'error',
     'no-console': 'off', // I don't think this setting is needed. This is because console.log may be used even when not debugging
-    'no-constant-condition': [ 'error',  { 'checkLoops': false } ], // Allow while (true)
+    'no-constant-condition': [ 'error', { 'checkLoops': false } ], // Allow while (true)
     'no-control-regex': 'error',
     'no-debugger': 'error',
     'no-dupe-args': 'error',
@@ -302,5 +303,19 @@ module.exports = {
     'symbol-description': 'error',
     'template-curly-spacing': 'error',
     'yield-star-spacing': 'error',
+
+    // [eslint-plugin-unused-imports](https://www.npmjs.com/package/eslint-plugin-unused-imports)
+    'no-undefined': 'off',
+    'no-unused-vars': 'off',
+    'unused-imports/no-unused-imports': 'error',
+    'unused-imports/no-unused-vars': [
+      'warn',
+      {
+        'vars': 'all',
+        'varsIgnorePattern': '^_',
+        'args': 'after-used',
+        'argsIgnorePattern': '^_',
+      },
+    ],
   },
 };

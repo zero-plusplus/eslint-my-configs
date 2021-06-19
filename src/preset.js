@@ -1,8 +1,8 @@
 const javascript = require('./rules/javascript');
-const jsx = require('./jsx');
-const lit = require('./lit');
-const react = require('./react');
-const typescript = require('./typescript');
+const jsx = require('./rules/jsx');
+const lit = require('./rules/lit');
+const react = require('./rules/react');
+const typescript = require('./rules/typescript');
 
 const javascriptBasePreset = {
   env: {

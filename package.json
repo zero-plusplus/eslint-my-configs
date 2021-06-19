@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/zero-plusplus/eslint-my-rules#readme",
   "dependencies": {
+    "@types/eslint": "^7.2.13",
     "@typescript-eslint/eslint-plugin": "^4.27.0",
     "@typescript-eslint/parser": "^4.27.0",
     "eslint": "^7.28.0",

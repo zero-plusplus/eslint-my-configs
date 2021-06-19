@@ -1,4 +1,4 @@
-const preset = require('./src/_preset');
+const preset = require('./src/preset');
 
 /**
  * @type {import("eslint").Linter.Config}

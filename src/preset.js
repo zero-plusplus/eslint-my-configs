@@ -1,4 +1,4 @@
-const javascript = require('./javascript');
+const javascript = require('./rules/javascript');
 const jsx = require('./jsx');
 const lit = require('./lit');
 const react = require('./react');

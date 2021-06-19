@@ -1,5 +1,4 @@
 const javascript = require('./rules/javascript');
-const jsx = require('./rules/jsx');
 const lit = require('./rules/lit');
 const react = require('./rules/react');
 const typescript = require('./rules/typescript');
@@ -50,24 +49,6 @@ module.exports = {
       },
       plugins: [
         ...javascript.plugins,
-        ...jsx.plugins,
-      ],
-      rules: [
-        ...javascript.plugins,
-        ...jsx.plugins,
-      ],
-    },
-    react: {
-      ...javascriptBasePreset,
-      files: '*.jsx',
-      parserOptions: {
-        ...javascriptBasePreset.parserOptions,
-        ecmaFeatures: {
-          jsx: true,
-        },
-      },
-      plugins: [
-        ...javascript.plugins,
         ...react.plugins,
       ],
       rules: javascript.plugins,
@@ -89,30 +70,13 @@ module.exports = {
       parser: typescript.parser,
       plugins: [
         ...typescript.plugins,
-        ...lit.plugins,
-        ...jsx.plugins,
-      ],
-      rules: {
-        ...typescript.rules,
-        ...lit.rules,
-        ...jsx.rules,
-      },
-    },
-    react: {
-      ...typescriptBasePreset,
-      files: '*.tsx',
-      parser: typescript.parser,
-      plugins: [
-        ...typescript.plugins,
         ...react.plugins,
         ...lit.plugins,
-        ...jsx.plugins,
       ],
       rules: {
         ...typescript.rules,
         ...react.rules,
         ...lit.rules,
-        ...jsx.rules,
       },
     },
   },

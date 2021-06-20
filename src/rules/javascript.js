@@ -149,7 +149,7 @@ module.exports = {
     'no-undef': 'error',
     'no-undef-init': 'error',
     'no-undefined': 'error',
-    'no-unused-vars': [ 'error', { args: 'none' } ],
+    'no-unused-vars': [ 'warn', { args: 'none' } ],
     'no-use-before-define': [ 'error', { 'classes': false } ],
 
     // Node.js and CommonJS
@@ -305,17 +305,6 @@ module.exports = {
     'yield-star-spacing': 'error',
 
     // [eslint-plugin-unused-imports](https://www.npmjs.com/package/eslint-plugin-unused-imports)
-    'no-undefined': 'off',
-    'no-unused-vars': 'off',
     'unused-imports/no-unused-imports': 'error',
-    'unused-imports/no-unused-vars': [
-      'warn',
-      {
-        'vars': 'all',
-        'varsIgnorePattern': '^_',
-        'args': 'after-used',
-        'argsIgnorePattern': '^_',
-      },
-    ],
   },
 };

@@ -5,7 +5,6 @@
   "main": "build/index.js",
   "scripts": {
     "build": "babel src --out-dir build",
-    "preinstall": "yarn build",
     "prepublishOnly": "yarn build"
   },
   "repository": {

@@ -1,6 +1,6 @@
 {
   "name": "@zero-plusplus/eslint-my-rules",
-  "version": "1.0.29",
+  "version": "1.0.30",
   "description": "",
   "main": "build/index.js",
   "scripts": {

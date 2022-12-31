@@ -101,7 +101,7 @@ module.exports = {
     '@typescript-eslint/require-array-sort-compare': 'error',
     '@typescript-eslint/restrict-plus-operands': 'error',
     '@typescript-eslint/restrict-template-expressions': [ 'error', { allowNumber: true, allowBoolean: true } ],
-    '@typescript-eslint/sort-type-constituents': 'error',
+    '@typescript-eslint/sort-type-constituents': 'off', // This rule is a hindrance when types are ordered logically
     '@typescript-eslint/sort-type-union-intersection-members': 'off', // This rule is a hindrance if sorting by role
     '@typescript-eslint/strict-boolean-expressions': 'off',
     '@typescript-eslint/switch-exhaustiveness-check': 'off',

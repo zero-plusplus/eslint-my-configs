@@ -2,10 +2,9 @@
 const indentSize = 2;
 
 module.exports = {
-  plugins: [ 'unused-imports' ],
+  plugins: [],
   indentSize: 2,
   rules: {
-
     // Possible Problems
     // https://eslint.org/docs/latest/rules/#possible-problems
     'array-callback-return': 'error',

@@ -28,42 +28,7 @@ module.exports = {
     '@typescript-eslint/explicit-member-accessibility': [ 'error', { overrides: { constructors: 'no-public' } } ],
     '@typescript-eslint/explicit-module-boundary-types': 'error',
     '@typescript-eslint/member-delimiter-style': 'error',
-    '@typescript-eslint/member-ordering': [
-      'error',
-      {
-        default: [
-          // Index signature
-          'signature',
-
-          // Fields
-          'public-static-field',
-          'protected-static-field',
-          'private-static-field',
-          'public-instance-field',
-          'protected-instance-field',
-          'private-instance-field',
-          'public-abstract-field',
-          'protected-abstract-field',
-          'private-abstract-field',
-
-          // Constructors
-          'public-constructor',
-          'protected-constructor',
-          'private-constructor',
-
-          // Methods
-          'public-static-method',
-          'protected-static-method',
-          'private-static-method',
-          'public-instance-method',
-          'protected-instance-method',
-          'private-instance-method',
-          'public-abstract-method',
-          'protected-abstract-method',
-          'private-abstract-method',
-        ],
-      },
-    ],
+    '@typescript-eslint/member-ordering': 'error',
     '@typescript-eslint/method-signature-style': 'error',
     '@typescript-eslint/naming-convention': 'off', // I prefer compound syntax like "commandData_base64". Therefore, the regular expression becomes complicated. You may enable this feature if eslint is able to edit the comments on error messages
     // [

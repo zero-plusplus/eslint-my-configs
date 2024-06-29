@@ -10,6 +10,7 @@ module.exports.lintRules = {
 
   // Wait for improve
   'no-undef': 'off', // NodeJS, BufferEncoding, etc. are not supported
+  'no-undefined': 'off', // This rule is unnecessary in Typescript because undefined is not overwritten
 
   // TypeScript rules
   // https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/eslint-plugin#supported-rules

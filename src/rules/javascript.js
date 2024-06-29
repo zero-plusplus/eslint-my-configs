@@ -237,7 +237,7 @@ module.exports.styleRules = {
   '@stylistic/js/line-comment-position': 'off', // I think that the easy-to-see position will change depending on the situation
   '@stylistic/js/linebreak-style': [ 'error', 'windows' ], // Because I use Windows only
   '@stylistic/js/lines-around-comment': 'off', // Same reason as line-comment-position
-  '@stylistic/js/lines-between-class-members': [ 'error', 'never' ],
+  '@stylistic/js/lines-between-class-members': 'off', // Appropriate line breaks should be considered on a case-by-case basis
   '@stylistic/js/max-len': 'off', // It may be better to fit on one line except in extreme cases
   '@stylistic/js/max-statements-per-line': 'off', // I don't know the proper value
   '@stylistic/js/multiline-comment-style': 'off', // No rules for comments. They should be in a format that is easy to read each time

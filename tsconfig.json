@@ -1,0 +1,33 @@
+{
+	"compilerOptions": {
+		"target": "ESNext",
+		"module": "commonjs",
+    "lib": [
+			"ESNext",
+			"DOM"
+		],
+		"types": [
+			"node"
+		],
+
+		"outDir": "build",
+		"sourceMap": true,
+		"strict": true,
+		"declaration": true,
+		"skipLibCheck": true,
+		"inlineSourceMap": false,
+		"noImplicitAny": false,
+		"noImplicitThis": true,
+		"noUnusedLocals": true,
+		"noUnusedParameters": false,
+		"preserveConstEnums": true,
+		"esModuleInterop": true,
+		"removeComments": false,
+		"resolveJsonModule": true,
+		"newLine": "crlf"
+	},
+	"include": [
+		"demo/**/*.ts",
+		"eslint.config.js"
+	]
+}

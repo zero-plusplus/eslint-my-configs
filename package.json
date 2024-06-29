@@ -2,37 +2,33 @@
   "name": "@zero-plusplus/eslint-my-rules",
   "version": "1.0.30",
   "description": "",
-  "main": "build/index.js",
-  "scripts": {
-    "build": "npx babel src --out-dir build",
-    "prepare": "npm run build"
+  "homepage": "https://github.com/zero-plusplus/eslint-my-rules#readme",
+  "bugs": {
+    "url": "https://github.com/zero-plusplus/eslint-my-rules/issues"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/zero-plusplus/eslint-my-rules.git"
   },
-  "author": "zero-plusplus",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/zero-plusplus/eslint-my-rules/issues"
-  },
-  "homepage": "https://github.com/zero-plusplus/eslint-my-rules#readme",
+  "author": "zero-plusplus",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {},
   "dependencies": {
-    "@types/eslint": "^8.56.2",
-    "@typescript-eslint/eslint-plugin": "^5.62.0",
-    "@typescript-eslint/parser": "^5.62.0",
-    "eslint": "^8.56.0",
-    "eslint-plugin-jsx-a11y": "^6.8.0",
-    "eslint-plugin-lit": "^1.11.0",
-    "eslint-plugin-react": "^7.33.2"
+    "@eslint/js": "^9.5.0",
+    "@stylistic/eslint-plugin-js": "^2.6.0-beta.0",
+    "@stylistic/eslint-plugin-ts": "^2.6.0-beta.0",
+    "@types/eslint__js": "^8.42.3",
+    "@typescript-eslint/parser": "^8.0.0-alpha.34",
+    "typescript-eslint": "^8.0.0-alpha.34"
   },
   "devDependencies": {
-    "@babel/cli": "^7.23.4",
-    "@babel/core": "^7.23.7",
-    "@babel/node": "^7.22.19",
-    "@babel/preset-env": "^7.23.8"
+    "@types/node": "^20.14.9",
+    "globals": "^15.6.0",
+    "typescript": "^5.5.2"
   },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
+  "peerDependencies": {
+    "eslint": ">= 9"
   }
 }

@@ -111,7 +111,7 @@ module.exports.lintRules = {
   'no-unused-vars': 'off',
   '@typescript-eslint/no-unused-vars': javascript.lintRules['no-unused-vars'],
   'no-use-before-define': 'off',
-  '@typescript-eslint/no-use-before-define': javascript.lintRules['no-use-before-define'],
+  '@typescript-eslint/no-use-before-define': [ 'error', { functions: false, classes: false, enums: false } ],
   'no-useless-constructor': 'off',
   '@typescript-eslint/no-useless-constructor': javascript.lintRules['no-useless-constructor'],
   '@typescript-eslint/no-useless-empty-export': 'error',

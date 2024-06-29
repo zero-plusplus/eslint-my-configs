@@ -12,7 +12,6 @@
   },
   "license": "MIT",
   "author": "zero-plusplus",
-  "type": "module",
   "main": "src/index.js",
   "scripts": {},
   "dependencies": {

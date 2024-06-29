@@ -1,10 +1,11 @@
-import stylisticJs from '@stylistic/eslint-plugin-js';
-import stylisticTs from '@stylistic/eslint-plugin-ts';
-import parserTs from '@typescript-eslint/parser';
-import tseslint from 'typescript-eslint';
-import * as javascript from './javascript.js';
+const stylisticJs = require('@stylistic/eslint-plugin-js');
+const stylisticTs = require('@stylistic/eslint-plugin-ts');
+const parserTs = require('@typescript-eslint/parser');
+const tseslint = require('typescript-eslint');
+const javascript = require('./javascript.js');
 
-export const lintRules = {
+module.exports = {};
+module.exports.lintRules = {
   ...javascript.lintRules,
 
   // Wait for improve
@@ -150,7 +151,7 @@ export const lintRules = {
   '@typescript-eslint/use-unknown-in-catch-callback-variable': 'error',
 };
 
-export const styleRules = {
+module.exports.styleRules = {
   // #region js
   '@stylistic/js/array-bracket-newline': javascript.styleRules['@stylistic/js/array-bracket-newline'],
   '@stylistic/js/array-bracket-spacing': javascript.styleRules['@stylistic/js/array-bracket-spacing'],
@@ -270,7 +271,7 @@ export const styleRules = {
 
   '@stylistic/ts/type-annotation-spacing': 'error',
 };
-export const config = {
+module.exports.config = {
   files: [ '**/*.ts' ],
   plugins: {
     '@typescript-eslint': tseslint.plugin,
@@ -278,12 +279,12 @@ export const config = {
     '@stylistic/ts': stylisticTs,
   },
   rules: {
-    ...lintRules,
-    ...styleRules,
+    ...module.exports.lintRules,
+    ...module.exports.styleRules,
   },
 };
 
-export const createLanguageOptions = (languageOptions) => {
+module.exports.createLanguageOptions = (languageOptions) => {
   return {
     languageOptions: {
       parser: parserTs,

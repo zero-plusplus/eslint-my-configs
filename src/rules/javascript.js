@@ -1,7 +1,8 @@
-import stylisticJs from '@stylistic/eslint-plugin-js';
+const stylisticJs = require('@stylistic/eslint-plugin-js');
 
 const indentSize = 2;
-export const lintRules = {
+module.exports = {};
+module.exports.lintRules = {
   // Possible Problems
   // https://eslint.org/docs/latest/rules/#possible-problems
   'array-callback-return': 'error',
@@ -209,7 +210,7 @@ export const lintRules = {
   'unicode-bom': 'error',
 };
 
-export const styleRules = {
+module.exports.styleRules = {
   '@stylistic/js/array-bracket-newline': [ 'error', { multiline: true } ],
   '@stylistic/js/array-bracket-spacing': [ 'error', 'always' ],
   '@stylistic/js/array-element-newline': [ 'error', 'consistent' ],
@@ -281,13 +282,13 @@ export const styleRules = {
   '@stylistic/js/yield-star-spacing': 'error',
 };
 
-export const config = {
+module.exports.config = {
   files: [ '**/*.js' ],
   plugins: {
     '@stylistic/js': stylisticJs,
   },
   rules: {
-    ...lintRules,
-    ...styleRules,
+    ...module.exports.lintRules,
+    ...module.exports.styleRules,
   },
 };

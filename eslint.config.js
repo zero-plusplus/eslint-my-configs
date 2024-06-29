@@ -1,13 +1,13 @@
-import globals from 'globals';
-import { javascript, typescript } from './src/index.js';
+const globals = require('globals');
+const { javascript, typescript } = require('./src/index.js');
 
 // Configuration examples and operational check configurations
-export default [
+module.exports = [
   typescript.createLanguageOptions({
     globals: globals.node,
     parserOptions: {
       project: true,
-      tsconfigDirName: import.meta.dirname,
+      tsconfigDirName: __dirname,
     },
   }),
   javascript.config,

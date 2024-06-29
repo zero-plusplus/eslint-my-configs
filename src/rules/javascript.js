@@ -263,7 +263,7 @@ module.exports.styleRules = {
   '@stylistic/js/operator-linebreak': [ 'error', 'before' ],
   '@stylistic/js/padded-blocks': [ 'error', 'never' ],
   '@stylistic/js/padding-line-between-statements': 'off', // I think a line break needs a logical reason. Automatic line breaks can't cover everything
-  '@stylistic/js/quote-props': [ 'error', 'consistent-as-needed', { numbers: true } ],
+  '@stylistic/js/quote-props': [ 'error', 'consistent' ],
   '@stylistic/js/quotes': [ 'error', 'single', { allowTemplateLiterals: true } ],
   '@stylistic/js/rest-spread-spacing': 'error',
   '@stylistic/js/semi': [ 'error', 'always' ],

@@ -57,7 +57,7 @@ module.exports.lintRules = {
   'no-unsafe-optional-chaining': 'error',
   'no-unused-private-class-members': 'error',
   'no-unused-vars': [ 'warn', { args: 'none' } ],
-  'no-use-before-define': [ 'error', { classes: false } ],
+  'no-use-before-define': [ 'error', { function: false, classes: false } ],
   'no-useless-assignment': 'error',
   'no-useless-backreference': 'error',
   'require-atomic-updates': 'error',

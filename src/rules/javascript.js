@@ -83,7 +83,7 @@ module.exports.lintRules = {
   'eqeqeq': 'error',
   'func-name-matching': 'error',
   'func-names': 'off', // I think it's redundant to even name the callback
-  'func-style': 'error',
+  'func-style': 'off', // Arrow functions and function declarations have different meanings. Choose the appropriate one each time
   'grouped-accessor-pairs': 'error',
   'guard-for-in': 'error',
   'id-denylist': 'off', // Decided it wasn't important enough to go through the trouble of creating a list of inappropriate names

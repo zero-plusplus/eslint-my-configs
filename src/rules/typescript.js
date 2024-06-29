@@ -34,7 +34,7 @@ module.exports.lintRules = {
   '@typescript-eslint/dot-notation': javascript.lintRules['dot-notation'],
   '@typescript-eslint/explicit-function-return-type': 'error',
   '@typescript-eslint/explicit-member-accessibility': [ 'error', { overrides: { constructors: 'no-public' } } ],
-  '@typescript-eslint/explicit-module-boundary-types': 'error',
+  '@typescript-eslint/explicit-module-boundary-types': [ 'error', { allowArgumentsExplicitlyTypedAsAny: true } ],
   'init-declarations': 'off',
   '@typescript-eslint/init-declarations': javascript.lintRules['init-declarations'],
   'max-params': 'off',

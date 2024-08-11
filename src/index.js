@@ -1,13 +1,9 @@
-const javascript = require('./rules/javascript');
-const lit = require('./rules/lit');
-const react = require('./rules/react');
-const typescript = require('./rules/typescript');
-const preset = require('./preset');
+const javascript = require('./rules/javascript.js');
+const typescript = require('./rules/typescript.js');
+// const lit = require('./rules/lit.js');
+// const react = require('./rules/react.js');
 
 module.exports = {
   javascript,
-  lit,
-  preset,
-  react,
   typescript,
 };
